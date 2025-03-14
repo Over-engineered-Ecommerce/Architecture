@@ -17,9 +17,11 @@ graph LR;
     Catalog((Catalog))
     
     
-    Gateway((API Gateway)) --> Auth((Authentication))
-    Auth((Authentication)) --> Users((Users))
+    
     Gateway((API Gateway)) --> Inventory((Inventory))
+    Backoffice((Backoffice)) --> Inventory((Inventory))
+    Auth((Authentication)) --> Users((Users))
+    Gateway((API Gateway)) --> Auth((Authentication))
     Gateway((API Gateway)) --> Catalog((Catalog))
     Backoffice((Backoffice)) --> Catalog((Catalog))
     Gateway((API Gateway)) --> Orders((Orders))
