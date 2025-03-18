@@ -57,13 +57,24 @@ graph LR;
 
 ## DevOps & Scalability
 
-| Area                     | Best Practices                                      |
-|--------------------------|-----------------------------------------------------|
-| Containerization          | Use Docker for each microservice                   |
+| Area                      | Best Practices                                      |
+|---------------------------|-----------------------------------------------------|
+| Test                      | TestContainers, Cucumber, Sonarqube                 |
+| Observability             | Grafana/Prometheus/Loki/tracing/metrics, Spring Cloud|
+| Containerization          | Use Docker for each microservice, JIB              |
 | Orchestration             | Deploy with Kubernetes (K8s) for auto-scaling      |
 | CI/CD Pipeline            | Automate builds & deployment with GitHub Actions  |
 | Blue-Green Deployment     | Reduce downtime by deploying updates gradually    |
 
+
+
+| Pekko                      |                                   |
+|---------------------------|-----------------------------------------------------|
+| Actors                      |             |
+| Streams                      |             |
+| Clusters                      |             |
+| Shard                      |             |
+| Pekko Management                      |             |
 
 
 
