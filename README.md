@@ -72,11 +72,12 @@ graph LR;
 
 | Pekko                      |                                   |
 |---------------------------|-----------------------------------------------------|
-| Actors                      |             |
+| Actors                      |  Actor Behaviour, Stash, Actor Supervisor         |
 | Streams                      |             |
-| Clusters                      |             |
+| Clusters                      | Split Brain Resolver            |
 | Shard                      |             |
 | Pekko Management                      |             |
+
 
 
 
