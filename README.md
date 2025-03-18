@@ -19,11 +19,13 @@ graph LR;
     
     
     Gateway((API Gateway)) --> Inventory((Inventory))
-    Backoffice((Backoffice)) --> Inventory((Inventory))
+    Backoffice((Backoffice)) --> InventoryTopic[Inventory Topic]
+    InventoryTopic --> Inventory((Inventory))
+    Backoffice((Backoffice)) --> CatalogTopic[Catalog Topic]
     Auth((Authentication)) --> Users((Users))
     Gateway((API Gateway)) --> Auth((Authentication))
     Gateway((API Gateway)) --> Catalog((Catalog))
-    Backoffice((Backoffice)) --> Catalog((Catalog))
+    CatalogTopic --> Catalog((Catalog))
     Gateway((API Gateway)) --> Orders((Orders))
     Gateway((API Gateway)) --> paymentTopic[Payment Topic]
     paymentTopic --> Payments((Payments))
