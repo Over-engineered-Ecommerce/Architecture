@@ -27,6 +27,7 @@ graph LR;
     Gateway((API Gateway)) --> Catalog((Catalog))
     CatalogTopic --> Catalog((Catalog))
     Gateway((API Gateway)) --> Orders((Orders))
+    Orders --> return((Return))
     Gateway((API Gateway)) --> paymentTopic[Payment Topic]
     paymentTopic --> Payments((Payments))
     paymentTopic --> Fraud((Fraud Detection))
